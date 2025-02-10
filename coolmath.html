@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Math Playground</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		iframe {
+			display: block;
+			width: calc(100% - 40px);
+			height: calc(100% - 40px);
+			margin: 20px;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	</style>
+	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+	<script src="x-frame-bypass.js" type="module"></script>
+</head>
+<body>
+	<iframe is="x-frame-bypass" src="https://coolmathgames.com/"></iframe>
+</body>
+</html>
